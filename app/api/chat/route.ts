@@ -17,6 +17,7 @@ interface Data {
   search?: boolean;
 }
 
+export const runtime = 'edge';
 export async function POST(request: Request) {
   const { messages, model, provider, search } = (await request.json()) as Data;
 

@@ -24,6 +24,7 @@ import { db, type Message } from "@/lib/db";
 import { models } from "@/lib/models";
 import { getStoredModel } from "@/lib/utils";
 
+export const runtime = 'edge';
 const Page = () => {
   const { session_id } = useParams() as { session_id: string };
   const searchParams = useSearchParams();

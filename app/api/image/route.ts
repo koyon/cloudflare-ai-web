@@ -10,6 +10,7 @@ const base64ToUint8Array = (base64: string) => {
   return Uint8Array.from(binaryString, (m) => m.codePointAt(0) ?? 0);
 };
 
+export const runtime = 'edge';
 export async function POST(request: Request) {
   const { prompt, model } = (await request.json()) as Data;
 
