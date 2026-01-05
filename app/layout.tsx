@@ -1,4 +1,7 @@
-import type { Metadata } from "next";
+
+  ions: {
+    icon: '/icon.svg', // 新增这一行，指向 public/icon.svg
+  },import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
@@ -12,6 +15,9 @@ import {
 export const metadata: Metadata = {
   title: "Cloudflare AI Web",
   description: "Cloudflare AI Platform with one-click deployment.",
+  icons: {
+    icon: '/icon.svg', // 纯静态资源，指向 public/icon.svg
+  },
 };
 
 export default async function RootLayout({
