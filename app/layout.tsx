@@ -1,7 +1,4 @@
-
-  ions: {
-    icon: '/icon.svg', // 新增这一行，指向 public/icon.svg
-  },import type { Metadata } from "next";
+import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
