@@ -25,6 +25,8 @@ import { models } from "@/lib/models";
 import { getStoredModel } from "@/lib/utils";
 
 export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
+
 const Page = () => {
   const { session_id } = useParams() as { session_id: string };
   const searchParams = useSearchParams();
